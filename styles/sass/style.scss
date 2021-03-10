@@ -1,0 +1,87 @@
+@import "variables";
+@import "setup";
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 125%;
+}
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+/*HEADER*/
+header {
+  background-color: $primary3;
+  height: 70vh;
+}
+.mainNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainNav li a {
+  padding: 0 30px;
+}
+.harperNav {
+  font-size: 2rem;
+}
+
+.headerFlex {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.headerImg {
+  box-shadow: 30px 10px white;
+}
+
+.headerText h1 {
+  font-size: 7rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.headerText {
+  position: relative;
+  padding-left: 100px;
+}
+
+.headerTextImg {
+  position: absolute;
+  top: 55px;
+  right: -60px;
+}
+.headerTextImg img {
+  width: 90%;
+}
+
+/*section ONE */
+.sectionOneFloat {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-end;
+  // justify-content: center;
+  float: right;
+  width: 50%;
+}
+
+.sectionOneFloat h2 {
+  margin-top: 100px;
+}
+.sectionOneFloat p {
+  margin: 20px 0;
+}
