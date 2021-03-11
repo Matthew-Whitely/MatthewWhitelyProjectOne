@@ -469,45 +469,43 @@ header {
 /*--------------------------------------*/
 /******S T A R T O F B L O G ************?
 /*--------------------------------------*/
-.sectionOneBlog {
-  width: 100%;
-  height: 70vh;
-}
-
-/*section 2 blog post*/
+/*section 1 blog post*/
 .blogPost {
   background-color: #f6f6f6;
 }
 
-.blogGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  padding-top: 50px;
+.blogH1 {
+  -webkit-transform: translateY(-65%);
+          transform: translateY(-65%);
+  margin: 0;
+}
+
+.blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.asideBlog {
+  width: 35%;
 }
 
 .itemOne {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 50px;
 }
 
 .recentPosts {
   padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 20px;
   background-color: #ffffff;
 }
 
 .recentPosts p {
-  font-size: 2rem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 
@@ -522,8 +520,44 @@ header {
 .mainBlog {
   padding: 15px;
   background-color: #ffffff;
+  width: 60%;
+  border-bottom: 4px solid #227284;
 }
 
 .mainBlog p {
   padding-bottom: 10px;
+}
+
+/* SECTION TWO */
+.sectionTwoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionTwoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+
+.sectionTwoImg {
+  padding-right: 20px;
+  width: 60%;
+}
+
+.sectionTwop {
+  margin-bottom: 30px;
+  padding: 10px;
 }

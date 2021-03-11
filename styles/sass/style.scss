@@ -156,33 +156,33 @@ header {
 /*--------------------------------------*/
 /******S T A R T O F B L O G ************?
 /*--------------------------------------*/
-.sectionOneBlog {
-  width: 100%;
-  height: 70vh;
-}
 
-/*section 2 blog post*/
+/*section 1 blog post*/
 .blogPost {
   background-color: $primary4;
 }
-.blogGrid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  padding-top: 50px;
+.blogH1 {
+  transform: translateY(-65%);
+  margin: 0;
+}
+.blogFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.asideBlog {
+  width: 35%;
 }
 .itemOne {
   background-color: $white;
-  padding: 30px;
+  padding: 50px;
 }
 .recentPosts {
   padding: 30px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 20px;
   background-color: $white;
 }
 .recentPosts p {
-  font-size: 2rem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 .recentPosts ul li {
@@ -196,7 +196,32 @@ header {
 .mainBlog {
   padding: 15px;
   background-color: $white;
+  width: 60%;
+  border-bottom: 4px solid $primary1;
 }
 .mainBlog p {
   padding-bottom: 10px;
+}
+
+/* SECTION TWO */
+
+.sectionTwoFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  justify-content: space-between;
+}
+
+.sectionTwoText {
+  display: flex;
+  width: 60%;
+}
+.sectionTwoImg {
+  padding-right: 20px;
+  width: 60%;
+}
+.sectionTwop {
+  margin-bottom: 30px;
+  padding: 10px;
 }
