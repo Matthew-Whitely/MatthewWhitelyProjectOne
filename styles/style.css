@@ -34,7 +34,7 @@ figure {
 
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -53,7 +53,7 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -169,7 +169,7 @@ fieldset {
 
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -189,7 +189,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -252,7 +252,7 @@ html {
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .sr-only {
@@ -264,7 +264,7 @@ html {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -299,7 +299,6 @@ img {
 /*HEADER*/
 header {
   background-color: #b9dde7;
-  height: 70vh;
 }
 
 .mainNav {
@@ -307,11 +306,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .mainNav li a {
@@ -327,31 +326,37 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 40px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .headerImg {
   -webkit-box-shadow: 30px 10px white;
-          box-shadow: 30px 10px white;
+  box-shadow: 30px 10px white;
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+  width: 40%;
 }
 
 .headerText h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
 }
 
 .headerText {
   position: relative;
-  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .headerTextImg {
   position: absolute;
-  top: 55px;
-  right: -60px;
+  top: 35px;
+  right: 43px;
 }
 
 .headerTextImg img {
@@ -360,14 +365,103 @@ header {
 
 /*section ONE */
 .sectionOneFloat {
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.nofloat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 35vh;
   width: 50%;
 }
 
-.sectionOneFloat h2 {
+.nofloat h2 {
   margin-top: 100px;
 }
 
-.sectionOneFloat p {
-  margin: 20px 0;
+.sectionTwoHome {
+  margin-top: 200px;
+}
+
+/*section two*/
+.imgContainer {
+  max-width: 100%;
+}
+
+/*SECTION THREE*/
+.sectionThreeHome {
+  background-color: #f6f6f6;
+}
+
+.gridTime {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+}
+
+.threePad {
+  padding: 70px 0;
+}
+
+/* Section 4*/
+.sectionFourHome {
+  background-color: #227284;
+}
+
+/*-------IMAGES IN SECTION$*/
+.bgColor {
+  background-color: #227284;
+}
+
+/*-----TEXT*/
+.fourTextOne {
+  background-color: #ffffff;
+}
+
+/*SECTION 5*/
+.sectionFiveFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.fiveText {
+  width: 60%;
+}
+
+/*SECTION six*/
+.sectionSix {
+  margin-top: 40px;
+}
+
+.sixFlex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.sixFlex li {
+  width: calc(100 / 3 - 40px);
 }
