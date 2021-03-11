@@ -34,7 +34,7 @@ figure {
 
 hr {
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -53,7 +53,7 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -169,7 +169,7 @@ fieldset {
 
 legend {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -189,7 +189,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -252,7 +252,7 @@ html {
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .sr-only {
@@ -264,7 +264,7 @@ html {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -306,11 +306,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mainNav li a {
@@ -326,19 +326,19 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 40px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .headerImg {
   -webkit-box-shadow: 30px 10px white;
-  box-shadow: 30px 10px white;
+          box-shadow: 30px 10px white;
   -webkit-transform: translateY(10%);
-  transform: translateY(10%);
+          transform: translateY(10%);
   width: 40%;
 }
 
@@ -369,8 +369,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .nofloat {
@@ -379,11 +379,11 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 35vh;
   width: 50%;
 }
@@ -410,9 +410,9 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 25px;
 }
 
@@ -441,8 +441,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .fiveText {
@@ -457,11 +457,73 @@ header {
 .sixFlex {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
 .sixFlex li {
   width: calc(100 / 3 - 40px);
+}
+
+/*--------------------------------------*/
+/******S T A R T O F B L O G ************?
+/*--------------------------------------*/
+.sectionOneBlog {
+  width: 100%;
+  height: 70vh;
+}
+
+/*section 2 blog post*/
+.blogPost {
+  background-color: #f6f6f6;
+}
+
+.blogGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  padding-top: 50px;
+}
+
+.itemOne {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.recentPosts {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+}
+
+.recentPosts p {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+.recentPosts ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/* right side of column css*/
+.mainBlog {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.mainBlog p {
+  padding-bottom: 10px;
 }

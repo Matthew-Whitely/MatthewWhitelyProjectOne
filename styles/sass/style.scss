@@ -153,3 +153,50 @@ header {
 .sixFlex li {
   width: calc(100 / 3 - 40px);
 }
+/*--------------------------------------*/
+/******S T A R T O F B L O G ************?
+/*--------------------------------------*/
+.sectionOneBlog {
+  width: 100%;
+  height: 70vh;
+}
+
+/*section 2 blog post*/
+.blogPost {
+  background-color: $primary4;
+}
+.blogGrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-top: 50px;
+}
+.itemOne {
+  background-color: $white;
+  padding: 30px;
+}
+.recentPosts {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+.recentPosts p {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.recentPosts ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/* right side of column css*/
+.mainBlog {
+  padding: 15px;
+  background-color: $white;
+}
+.mainBlog p {
+  padding-bottom: 10px;
+}
