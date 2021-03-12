@@ -228,7 +228,7 @@ header {
 }
 /* BLOG FORM*/
 
-form {
+.blogForm {
   display: flex;
   justify-content: flex-end;
 }
@@ -270,7 +270,30 @@ textarea {
 .contactFlex {
   display: flex;
 }
-.asideBlog {
-  padding: 30px;
+.asideContact {
+  padding-right: 30px;
   width: 35%;
+}
+/*Left side*/
+.contactPad {
+  background-color: $white;
+  p {
+    padding: 10px 10px;
+  }
+}
+.iconFlex {
+  display: flex;
+  margin-bottom: 10px;
+  li {
+    padding: 15px 10px;
+  }
+}
+.contactInfo li {
+  padding: 5px 10px;
+}
+
+/*right side*/
+
+.contactForm {
+  width: 65%;
 }
