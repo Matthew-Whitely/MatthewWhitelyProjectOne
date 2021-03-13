@@ -269,6 +269,70 @@ html {
   overflow: hidden;
 }
 
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4.6rem;
+  line-height: 92px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.buttonTxt {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  background-color: #f38d8d;
+  border: none;
+  padding: 12px;
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+
+.btnWidth {
+  padding: 10px 30px;
+}
+
+.menuTxt {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+
+p {
+  font-family: "Cabin", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.copyRight {
+  background-color: #171717;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -294,8 +358,10 @@ li {
 
 img {
   width: 100%;
+  height: auto;
 }
 
+/*TOPOGRAPHY*/
 /*HEADER*/
 header {
   background-color: #b9dde7;
@@ -355,7 +421,7 @@ header {
 
 .headerTextImg {
   position: absolute;
-  top: 35px;
+  top: 18px;
   right: 43px;
 }
 
@@ -397,8 +463,12 @@ header {
 }
 
 /*section two*/
-.imgContainer {
-  max-width: 100%;
+.sectionTwoHome {
+  background: url(.././harper-designAndAssets/assets/home-image-2.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backgroound-postion: center;
 }
 
 /*SECTION THREE*/
@@ -416,13 +486,72 @@ header {
   gap: 25px;
 }
 
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.iconContainer i {
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: #b9dde7;
+  position: relative;
+  border-radius: 50%;
+  top: -19px;
+  right: 12px;
+}
+
+\ .test2 {
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.test2 h3 {
+  margin-bottom: 20px;
+}
+
 .threePad {
   padding: 70px 0;
 }
 
 /* Section 4*/
-.sectionFourHome {
-  background-color: #227284;
+.waveImg {
+  background-color: #68b0c1;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.waveImgOne {
+  background-color: #68b0c1;
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.babyWrapper {
+  max-width: 600px;
+  width: 90%;
+  margin-left: auto;
+}
+
+.babyWrapper1 {
+  max-width: 600px;
+  width: 90%;
+}
+
+.waveImgBox img {
+  -webkit-transform: translate(-10px, -20px);
+          transform: translate(-10px, -20px);
+}
+
+.waveImgBox2 img {
+  -webkit-transform: translate(-2%, -5%);
+          transform: translate(-2%, -5%);
+}
+
+/*what annnn annoyance*/
+.btnAlignRight {
+  text-align: right;
 }
 
 /*-------IMAGES IN SECTION$*/
@@ -435,7 +564,15 @@ header {
   background-color: #ffffff;
 }
 
+.fourTextOne h3 {
+  padding: 20px 0;
+}
+
 /*SECTION 5*/
+.sectionFive {
+  background-color: #f6f6f6;
+}
+
 .sectionFiveFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,15 +580,22 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 150px 0;
+}
+
+.fiveImg img {
+  -webkit-box-shadow: 15px 15px #227284;
+          box-shadow: 15px 15px #227284;
 }
 
 .fiveText {
   width: 60%;
+  margin-left: 40px;
 }
 
 /*SECTION six*/
 .sectionSix {
-  margin-top: 40px;
+  margin: 70px 0;
 }
 
 .sixFlex {
