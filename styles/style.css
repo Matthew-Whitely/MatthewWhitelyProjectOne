@@ -274,28 +274,24 @@ h1 {
   font-size: 4.6rem;
   line-height: 92px;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 2.2rem;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 .buttonTxt {
@@ -308,7 +304,6 @@ h4 {
   border: none;
   padding: 12px;
   margin-top: 40px;
-  text-transform: capitalize;
 }
 
 .btnWidth {
@@ -331,6 +326,16 @@ p {
   color: #ffffff;
   padding: 15px 0;
   text-align: center;
+}
+
+.copyRight1 {
+  background-color: #171717;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
 }
 
 * {
@@ -723,6 +728,7 @@ header {
 
 .flexForm {
   width: 60%;
+  padding-bottom: 25px;
 }
 
 .labelsBlog {
@@ -763,6 +769,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 25px;
 }
 
 .asideContact {
@@ -797,6 +804,7 @@ textarea {
 /*right side*/
 .contactForm {
   width: 65%;
+  height: 100%;
 }
 
 @media (max-width: 1020px) {
@@ -1082,9 +1090,26 @@ textarea {
   /*-----------------------------*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*------START OF Contact -----------*/
+  /*------START OF CONTACT -----------*/
   /*-----------------------------*/
   /*-----------------------------*/
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .asideContact {
+    width: 100%;
+  }
+  .contactPad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .iconFlex {
+    display: block;
+  }
   /*-----------------------------*/
 }
 
@@ -1107,4 +1132,65 @@ textarea {
   h2 {
     font-size: 1.7rem;
   }
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*------START OF BLOG -----------*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  .blogBgColor img {
+    height: 15vh;
+  }
+  .blogH1 {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .itemOne {
+    padding: 0 50px;
+  }
+  .itemOne img {
+    height: auto;
+  }
+  .itemOne h3 {
+    padding: 10px 20px;
+  }
+  .itemOne p {
+    padding: 5px 20px;
+  }
+  .recentPosts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px;
+  }
+  .recentPosts p {
+    width: 100%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    text-align: center;
+  }
+  .recentPosts ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectionTwoText {
+    display: block;
+  }
+  .sectionTwoImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionTwoImg img {
+    width: 50%;
+    height: auto;
+  }
+  /*-----------------------------*/
 }

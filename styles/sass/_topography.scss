@@ -3,28 +3,24 @@ h1 {
   font-size: 4.6rem;
   line-height: 92px;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 2.2rem;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 .buttonTxt {
@@ -37,7 +33,6 @@ h4 {
   border: none;
   padding: 12px;
   margin-top: 40px;
-  text-transform: capitalize;
 }
 .btnWidth {
   padding: 10px 30px;
@@ -59,4 +54,13 @@ p {
   color: $white;
   padding: 15px 0;
   text-align: center;
+}
+.copyRight1 {
+  background-color: $black;
+  color: $white;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
 }

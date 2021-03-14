@@ -250,10 +250,23 @@
 
   /*-----------------------------*/
   /*-----------------------------*/
-  /*------START OF Contact -----------*/
+  /*------START OF CONTACT -----------*/
   /*-----------------------------*/
   /*-----------------------------*/
+  .contactFlex {
+    flex-direction: column-reverse;
+  }
 
+  .asideContact {
+    width: 100%;
+  }
+
+  .contactPad {
+    display: flex;
+  }
+  .iconFlex {
+    display: block;
+  }
   /*-----------------------------*/
 }
 @media (max-width: 500px) {
@@ -277,4 +290,56 @@
   h2 {
     font-size: 1.7rem;
   }
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*------START OF BLOG -----------*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  .blogBgColor {
+    img {
+      height: 15vh;
+    }
+  }
+  .blogH1 {
+    transform: translateY(0%);
+  }
+  .itemOne {
+    padding: 0 50px;
+    img {
+      height: auto;
+    }
+    h3 {
+      padding: 10px 20px;
+    }
+    p {
+      padding: 5px 20px;
+    }
+  }
+  .recentPosts {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    p {
+      width: 100%;
+      transform: translate(0%, 0%);
+      text-align: center;
+    }
+    ul {
+      align-items: center;
+    }
+  }
+
+  .sectionTwoText {
+    display: block;
+  }
+  .sectionTwoImg {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+  /*-----------------------------*/
 }

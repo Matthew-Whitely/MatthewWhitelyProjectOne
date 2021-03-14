@@ -323,6 +323,7 @@ header {
 
 .flexForm {
   width: 60%;
+  padding-bottom: 25px;
 }
 
 .labelsBlog {
@@ -357,6 +358,7 @@ textarea {
 /*--------------------------------*/
 .contactFlex {
   display: flex;
+  padding-bottom: 25px;
 }
 .asideContact {
   padding-right: 30px;
@@ -384,6 +386,7 @@ textarea {
 
 .contactForm {
   width: 65%;
+  height: 100%;
 }
 
 @import "media";
