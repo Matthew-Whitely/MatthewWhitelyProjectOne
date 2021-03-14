@@ -29,10 +29,12 @@ h4 {
   text-align: center;
   line-height: 32px;
   letter-spacing: 1px;
-  background-color: $accent;
+  background-color: $black;
   border: none;
   padding: 12px;
   margin-top: 40px;
+  color: $white;
+  overflow: hidden;
 }
 .btnWidth {
   padding: 10px 30px;
@@ -54,13 +56,4 @@ p {
   color: $white;
   padding: 15px 0;
   text-align: center;
-}
-.copyRight1 {
-  background-color: $black;
-  color: $white;
-  padding: 15px 0;
-  text-align: center;
-  position: relative;
-  top: 0;
-  bottom: 0;
 }

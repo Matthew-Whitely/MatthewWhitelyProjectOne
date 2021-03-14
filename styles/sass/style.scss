@@ -22,6 +22,12 @@ a {
 a:hover {
   color: $white;
 }
+a:focus-within,
+a:focus,
+a:active {
+  color: $white !important;
+}
+
 li {
   list-style: none;
 }
@@ -29,20 +35,15 @@ img {
   width: 100%;
   height: auto;
 }
+button:hover,
+button:focus {
+  background-color: $accent;
+}
 
 /*HEADER*/
 header {
   background-color: $primary3;
 }
-/* FOR THE MOBILES */
-// .mobile {
-//   display: none;
-//   font-size: 3rem;
-//   i {
-//     color: white;
-//   }
-// }
-/* FOR THE MOBILES */
 
 .mainNav {
   display: flex;
@@ -97,13 +98,13 @@ header {
 }
 
 /*section ONE */
+.sectionOne {
+  background-color: $primary4;
+}
 .sectionOneFloat {
   display: flex;
   justify-content: flex-end;
-}
-
-.sectionTwoHome {
-  margin-top: 200px;
+  padding-bottom: 100px;
 }
 
 .nofloat {
@@ -285,7 +286,7 @@ header {
   padding-bottom: 10px;
 }
 .recentPosts ul li a:hover {
-  color: $primary2;
+  color: $accent;
 }
 
 /* right side of column css*/
@@ -368,7 +369,7 @@ textarea {
 /*--------------------------------*/
 .contactFlex {
   display: flex;
-  padding-bottom: 25px;
+  padding-bottom: 100px;
 }
 .asideContact {
   padding-right: 30px;
@@ -387,8 +388,14 @@ textarea {
   li {
     padding: 15px 10px;
   }
-  a:hover {
+  a {
     color: $primary2;
+  }
+  a:hover {
+    color: black;
+  }
+  p {
+    font-weight: bold;
   }
 }
 .contactInfo li {
@@ -400,6 +407,9 @@ textarea {
 .contactForm {
   width: 65%;
   height: 100%;
+}
+.postComment {
+  margin-bottom: 20px;
 }
 
 @import "media";
