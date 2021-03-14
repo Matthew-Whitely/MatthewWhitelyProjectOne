@@ -17,6 +17,10 @@ html {
 
 a {
   text-decoration: none;
+  color: $black;
+}
+a:hover {
+  color: $white;
 }
 li {
   list-style: none;
@@ -280,6 +284,9 @@ header {
   padding-left: 10px;
   padding-bottom: 10px;
 }
+.recentPosts ul li a:hover {
+  color: $primary2;
+}
 
 /* right side of column css*/
 .mainBlog {
@@ -298,8 +305,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
   justify-content: space-between;
+  padding-top: 40px;
 }
 
 .sectionTwoText {
@@ -313,6 +320,9 @@ header {
 .sectionTwop {
   margin-bottom: 30px;
   padding: 10px;
+  p {
+    padding-bottom: 10px;
+  }
 }
 /* BLOG FORM*/
 
@@ -376,6 +386,9 @@ textarea {
   margin-bottom: 10px;
   li {
     padding: 15px 10px;
+  }
+  a:hover {
+    color: $primary2;
   }
 }
 .contactInfo li {

@@ -355,6 +355,11 @@ html {
 
 a {
   text-decoration: none;
+  color: #171717;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 li {
@@ -670,6 +675,10 @@ header {
   padding-bottom: 10px;
 }
 
+.recentPosts ul li a:hover {
+  color: #68b0c1;
+}
+
 /* right side of column css*/
 .mainBlog {
   padding: 15px;
@@ -697,6 +706,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 40px;
 }
 
 .sectionTwoText {
@@ -714,6 +724,10 @@ header {
 .sectionTwop {
   margin-bottom: 30px;
   padding: 10px;
+}
+
+.sectionTwop p {
+  padding-bottom: 10px;
 }
 
 /* BLOG FORM*/
@@ -795,6 +809,10 @@ textarea {
 
 .iconFlex li {
   padding: 15px 10px;
+}
+
+.iconFlex a:hover {
+  color: #68b0c1;
 }
 
 .contactInfo li {
@@ -883,6 +901,9 @@ textarea {
   }
   .mainBlog h3 {
     font-size: 1.2rem;
+  }
+  .sectionTwoText {
+    width: 100%;
   }
   /*-----------------------------*/
 }
@@ -1036,7 +1057,7 @@ textarea {
   }
   .blogH1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.9rem;
     -webkit-transform: translateY(-55%);
             transform: translateY(-55%);
   }
@@ -1093,6 +1114,9 @@ textarea {
   /*------START OF CONTACT -----------*/
   /*-----------------------------*/
   /*-----------------------------*/
+  .contactForm {
+    width: 100%;
+  }
   .contactFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1101,14 +1125,27 @@ textarea {
   }
   .asideContact {
     width: 100%;
+    padding: 0;
   }
   .contactPad {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactPad p {
+    text-align: center;
+  }
+  .iconFlex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .iconFlex {
-    display: block;
+  .contactInfo {
+    text-align: center;
   }
   /*-----------------------------*/
 }
@@ -1192,5 +1229,23 @@ textarea {
     width: 50%;
     height: auto;
   }
+  .sectionTwop p {
+    padding-bottom: 15px;
+  }
+  .labelsBlog {
+    display: block;
+  }
+  .labelsBlog input[type="text"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .labelsBlog input[type="email"] {
+    width: 100%;
+  }
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*------START OF CONTACT -----------*/
+  /*-----------------------------*/
+  /*-----------------------------*/
   /*-----------------------------*/
 }

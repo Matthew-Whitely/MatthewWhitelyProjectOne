@@ -75,6 +75,9 @@
   .mainBlog h3 {
     font-size: 1.2rem;
   }
+  .sectionTwoText {
+    width: 100%;
+  }
   /*-----------------------------*/
 }
 
@@ -207,7 +210,7 @@
   }
   .blogH1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.9rem;
     transform: translateY(-55%);
   }
   .blogFlex {
@@ -253,19 +256,32 @@
   /*------START OF CONTACT -----------*/
   /*-----------------------------*/
   /*-----------------------------*/
+
+  .contactForm {
+    width: 100%;
+  }
+
   .contactFlex {
     flex-direction: column-reverse;
   }
 
   .asideContact {
     width: 100%;
+    padding: 0;
   }
 
   .contactPad {
-    display: flex;
+    flex-direction: column;
+    p {
+      text-align: center;
+    }
   }
   .iconFlex {
-    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .contactInfo {
+    text-align: center;
   }
   /*-----------------------------*/
 }
@@ -341,5 +357,27 @@
       height: auto;
     }
   }
+  .sectionTwop {
+    p {
+      padding-bottom: 15px;
+    }
+  }
+  .labelsBlog {
+    display: block;
+
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    input[type="email"] {
+      width: 100%;
+    }
+  }
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*------START OF CONTACT -----------*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+
   /*-----------------------------*/
 }
