@@ -16,59 +16,74 @@
 <body>
   <header>
     <div class="wrapper">
-      <nav>
+      <nav class="blogNav">
+
         <ul class="mainNav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="harperNav"><a href="#">HARPER</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="mobile"><a href="../index.html">Home</a>
+
+          </li>
+          <li class="mobile"><a href="">ABOUT</a></li>
+          <li><a href="">HARPER</a>
+            <ul class="subMenu">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </li>
+          <li class="mobile"><a href="blog.html">BLOG</a></li>
+          <li class="mobile"><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
   </header>
 
-  <main class="blogBgColor">
+  <main>
     <section>
-      <img src="../harper-designAndAssets/assets/contact-image-1.jpg" alt="" Tree with pink flowers blooming">
-      <div class="wrapper">
-        <h1 class="blogH1">Contact Me</h1>
-        <div class="contactFlex">
-          <aside class="asideContact">
-            <div class="contactPad">
-              <ul class="iconFlex">
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-linkedin-in"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-              </ul>
-              <p>Info@email.com</p>
-              <ul class="contactInfo">
-                <li>010-110-0010</li>
-                <li>123 Queen Stree west,Unit 10</li>
-                <li>Toronto, Ontario</li>
-                <li>M5V2O5</li>
+      <div class="blogBgColor">
+        <img src="../harper-designAndAssets/assets/contact-image-1.jpg" alt="" Tree with pink flowers blooming">
+        <div class="wrapper">
+          <h1 class="blogH1">Contact Me</h1>
+          <div class="contactFlex">
+            <aside class="asideContact">
+              <div class="contactPad">
+                <ul class="iconFlex">
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-twitter"></i></li>
+                  <li><i class="fab fa-linkedin-in"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                </ul>
+                <p>Info@email.com</p>
+                <ul class="contactInfo">
+                  <li>010-110-0010</li>
+                  <li>123 Queen Stree west,Unit 10</li>
+                  <li>Toronto, Ontario</li>
+                  <li>M5V2O5</li>
 
-              </ul>
-            </div>
-          </aside>
-          <form class="contactForm" action="">
-            <div class="contactFormWidth">
-              <div class="labelsBlog">
-                <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <label for="email"></label>
-                <input type="email" name="email" placeholder="Email address">
+                </ul>
               </div>
-              <div class="textarea">
-                <textarea name="blogPost" id="blogPost" placeholder="Comment"></textarea>
+            </aside>
+            <form class="contactForm" action="">
+              <div class="contactFormWidth">
+                <div class="labelsBlog">
+                  <label for="name"></label>
+                  <input type="text" name="name" id="name" placeholder="Name">
+                  <label for="email"></label>
+                  <input type="email" name="email" placeholder="Email address">
+                </div>
+                <div class="textarea">
+                  <textarea name="blogPost" id="blogPost" placeholder="Comment"></textarea>
+                </div>
+                <button class="postComment" type="submit">POST COMMENT</button>
               </div>
-              <button class="postComment" type="submit">POST COMMENT</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <footer>
+    <p class="copyRight">Copyright &#169; 2021 Juno College </p>
+  </footer>
 </body>
 
 </html>

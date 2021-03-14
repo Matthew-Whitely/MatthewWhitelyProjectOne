@@ -14,13 +14,24 @@
 <body>
   <header>
     <div class="wrapper">
-      <nav>
+
+      <nav class="blogNav">
+
         <ul class="mainNav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="">About</a></li>
-          <li class="harperNav"><a href="">HARPER</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile"><a href="../index.html">Home</a>
+
+          </li>
+          <li class="mobile"><a href="">ABOUT</a></li>
+          <li><a href="">HARPER</a>
+            <ul class="subMenu">
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </li>
+          <li class="mobile"><a href="blog.html">BLOG</a></li>
+          <li class="mobile"><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
   </header>
@@ -41,10 +52,12 @@
             <div class="recentPosts">
               <p>Recent Posts</p>
               <ul>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+
+                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+
+                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit.</a></li>
 
               </ul>
             </div>
@@ -121,7 +134,7 @@
       </div>
 
     </section>
-    <section class="blogForm">
+    <section>
       <div class="wrapper">
         <form class="blogForm" action="">
           <div class="flexForm">
@@ -141,6 +154,9 @@
       </div>
     </section>
   </main>
+  <footer>
+    <p class="copyRight">Copyright &#169; 2021 Juno College </p>
+  </footer>
 </body>
 
 </html>

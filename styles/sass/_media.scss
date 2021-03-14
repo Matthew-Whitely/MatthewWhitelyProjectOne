@@ -1,0 +1,280 @@
+@media (max-width: 1020px) {
+  /*THIS IS FOR THE HEADER ON THE HOME PAGE */
+  /* MINOR FIXES */
+  .headerText h1 {
+    font-size: 5rem;
+  }
+  .headerTextImg {
+    top: 18px;
+    right: 25px;
+    img {
+      width: 80%;
+    }
+  }
+  /*-----------------------------------------*/
+}
+@media (max-width: 960px) {
+  /*THIS IS FOR THE HEADER ON THE HOME PAGE */
+  .headerText {
+    position: relative;
+    padding-right: 50px;
+    margin-left: 40px;
+  }
+  .headerTextImg {
+    top: 18px;
+    right: -23px;
+  }
+  /*-----------------------------------------*/
+  /*THIS IS FOR SECTION 4 ON THE HOME PAGE */
+
+  .gridTime1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px;
+  }
+  .babyWrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .babyWrapper1 {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fourTextOne {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .btnAlignRight {
+    text-align: center;
+  }
+  .waveImgBox {
+    img {
+      transform: translate(0px, -20px);
+    }
+  }
+
+  .waveImgBox2 {
+    img {
+      transform: translate(0px, -5%);
+    }
+  }
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*------START OF BLOG -----------*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  .itemOne h3 {
+    font-size: 1.1rem;
+  }
+  .recentPosts li {
+    font-size: 0.8rem;
+  }
+  .mainBlog h3 {
+    font-size: 1.2rem;
+  }
+  /*-----------------------------*/
+}
+
+@media (max-width: 750px) {
+  /*THIS IS FOR THE HEADER ON THE HOME PAGE */
+  .mainNav {
+    justify-content: flex-start;
+  }
+  .mobile {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+  .mainNav li:hover .subMenu,
+  .mainNav li:focus-within .subMenu {
+    height: auto;
+    padding: 10px;
+    overflow: auto;
+  }
+  .subMenu {
+    font-size: 1rem;
+    margin-bottom: 100px;
+  }
+  .mainNav li:nth-child(3) {
+    font-size: 1rem;
+  }
+  .headerFlex {
+    flex-direction: column-reverse;
+  }
+
+  .headerImg {
+    box-shadow: 15px 5px white;
+    transform: translateY(3%);
+    width: 80%;
+  }
+
+  /*-----------------------------------------*/
+  /*---------START OF SECTION 2----------------*/
+
+  .nofloat {
+    width: 100%;
+    text-align: center;
+    p {
+      padding: 20px 0;
+    }
+  }
+  .sectionTwoHome {
+    height: 30vh;
+    margin-top: 40px;
+  }
+  /*-----------------------------------------*/
+  /*---------START OF SECTION 3----------------*/
+  .sectionThreeBgColor {
+    background-color: $primary4;
+  }
+  .gridTime {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .gridTime:last-child {
+    padding-bottom: 70px;
+  }
+  .iconContainer {
+    display: block;
+    text-align: center;
+    i {
+      font-size: 1.2rem;
+      padding: 20px;
+      background-color: $primary3;
+      position: inherit;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .threePad {
+    padding: 30px 0;
+  }
+  /*-----------------------------------------*/
+  /*---------START OF SECTION 5----------------*/
+  .sectionFive {
+    background-color: $primary4;
+  }
+  .sectionFiveFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .fiveImg {
+    align-items: center;
+    img {
+      box-shadow: 15px 15px $primary1;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  .fiveText {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  /*-----------------------------------------*/
+  /*---------START OF SECTION 6----------------*/
+  .sectionSix {
+    margin: 20px 0;
+  }
+  .sixFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    tedt li {
+      img {
+        padding: 10px;
+        width: 80%;
+      }
+    }
+  }
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*------START OF BLOG -----------*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  nav {
+    padding-bottom: 50px;
+  }
+  .blogNav {
+    padding-bottom: 10px;
+  }
+  .blogH1 {
+    text-align: center;
+    font-size: 3rem;
+    transform: translateY(-55%);
+  }
+  .blogFlex {
+    display: block;
+    width: 100%;
+  }
+
+  .asideBlog {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .recentPosts {
+    padding-bottom: 0;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    p {
+      transform: translate(20px, 170%);
+      width: 50%;
+      font-size: 1.5rem;
+    }
+  }
+  .mainBlog {
+    width: 100%;
+  }
+  .sectionTwoText {
+    width: 100%;
+  }
+  .sectionTwoImg {
+    width: 100%;
+  }
+
+  .flexForm {
+    width: 100%;
+  }
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*------START OF Contact -----------*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+}
+@media (max-width: 500px) {
+  /*THIS IS FOR THE HEADER ON THE HOME PAGE */
+
+  .headerText h1 {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  .headerTextImg {
+    top: -15px;
+    right: 5px;
+    width: 40%;
+  }
+  nav {
+    padding-bottom: 60px;
+  }
+
+  /*-----------------------------------------*/
+  /*THIS IS FOR SECTION 1 ON THE HOME PAGE */
+  h2 {
+    font-size: 1.7rem;
+  }
+}

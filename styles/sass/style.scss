@@ -1,6 +1,7 @@
 @import "variables";
 @import "setup";
 @import "topography";
+
 * {
   margin: 0;
   padding: 0;
@@ -24,12 +25,21 @@ img {
   width: 100%;
   height: auto;
 }
-/*TOPOGRAPHY*/
 
 /*HEADER*/
 header {
   background-color: $primary3;
 }
+/* FOR THE MOBILES */
+// .mobile {
+//   display: none;
+//   font-size: 3rem;
+//   i {
+//     color: white;
+//   }
+// }
+/* FOR THE MOBILES */
+
 .mainNav {
   display: flex;
   justify-content: center;
@@ -41,7 +51,13 @@ header {
   }
 }
 
-.harperNav {
+.subMenu {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.mainNav li:nth-child(3) {
   font-size: 2rem;
 }
 
@@ -60,7 +76,6 @@ header {
 
 .headerText h1 {
   font-size: 6rem;
-  font-family: "Oswald", sans-serif;
   font-weight: 700;
 }
 .headerText {
@@ -72,30 +87,29 @@ header {
   position: absolute;
   top: 18px;
   right: 43px;
+  img {
+    width: 90%;
+  }
 }
-.headerTextImg img {
-  width: 90%;
-}
+
 /*section ONE */
 .sectionOneFloat {
   display: flex;
   justify-content: flex-end;
 }
 
-.nofloat {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 35vh;
-  width: 50%;
-}
-
-.nofloat h2 {
-  margin-top: 100px;
-}
-
 .sectionTwoHome {
   margin-top: 200px;
+}
+
+.nofloat {
+  width: 50%;
+  h2 {
+    margin-top: 100px;
+  }
+  p {
+    padding: 40px 0;
+  }
 }
 
 /*section two*/
@@ -104,11 +118,9 @@ header {
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
-  backgroound-postion: center;
+  background-position: center;
 }
-// .imgContainer {
-//   max-width: 100%;
-// }
+
 /*SECTION THREE*/
 .sectionThreeHome {
   background-color: $primary4;
@@ -122,31 +134,26 @@ header {
 
 .iconContainer {
   display: flex;
-}
-.iconContainer i {
-  font-size: 1.2rem;
-  padding: 20px;
-  background-color: $primary3;
+  i {
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: $primary3;
 
-  position: relative;
-  border-radius: 50%;
-  top: -19px;
-  right: 12px;
+    position: relative;
+    border-radius: 50%;
+    top: -19px;
+    right: 12px;
+  }
 }
-\ .test2 {
-  justify-self: stretch;
-}
+
 .test2 h3 {
   margin-bottom: 20px;
 }
 .threePad {
   padding: 70px 0;
 }
+
 /* Section 4*/
-
-// .sectionFourHome {
-//   // margin: 40px 0;
-
 .waveImg {
   background-color: $primary2;
   transform: translateY(-5%);
@@ -155,7 +162,12 @@ header {
   background-color: $primary2;
   transform: translateY(5%);
 }
-
+.gridTime1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+}
 .babyWrapper {
   max-width: 600px;
   width: 90%;
@@ -194,6 +206,7 @@ header {
     padding: 20px 0;
   }
 }
+
 /*SECTION 5*/
 .sectionFive {
   background-color: $primary4;
@@ -218,11 +231,13 @@ header {
   margin: 70px 0;
 }
 .sixFlex {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+
   li {
-    width: calc(100 / 3 - 40px);
+    img {
+      padding: 10px;
+    }
   }
 }
 
@@ -370,3 +385,5 @@ textarea {
 .contactForm {
   width: 65%;
 }
+
+@import "media";
