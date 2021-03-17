@@ -15,16 +15,13 @@
   .contactForm {
     width: 100%;
   }
-
   .contactFlex {
     flex-direction: column-reverse;
   }
-
   .asideContact {
     width: 100%;
     padding: 0;
   }
-
   .contactPad {
     flex-direction: column;
     p {
@@ -52,7 +49,6 @@
   }
   /*-----------------------------------------*/
   /*THIS IS FOR SECTION 4 ON THE HOME PAGE */
-
   .gridTime1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -81,7 +77,6 @@
       transform: translate(0px, -20px);
     }
   }
-
   .waveImgBox2 {
     img {
       transform: translate(0px, -5%);
@@ -112,7 +107,6 @@
   }
   /*-----------------------------*/
 }
-
 @media (max-width: 760px) {
   /*THIS IS FOR THE HEADER ON THE HOME PAGE */
   .mainNav {
@@ -139,7 +133,6 @@
   .headerFlex {
     flex-direction: column-reverse;
   }
-
   .headerImg {
     box-shadow: 15px 5px white;
     transform: translateY(3%);
@@ -148,7 +141,6 @@
 
   /*-----------------------------------------*/
   /*---------START OF SECTION 2----------------*/
-
   .nofloat {
     width: 100%;
     text-align: center;
@@ -248,7 +240,6 @@
     display: block;
     width: 100%;
   }
-
   .asideBlog {
     width: 100%;
     display: flex;
@@ -276,12 +267,10 @@
   .sectionTwoImg {
     width: 100%;
   }
-
   .flexForm {
     width: 100%;
   }
   /*-----------------------------*/
-
   /*-----------------------------*/
   /*-----------------------------*/
   /*------START OF CONTACT -----------*/
@@ -314,7 +303,6 @@
     background-color: $primary2;
     transform: translateY(-5%);
   }
-
   .fiveImg img {
     -webkit-box-shadow: 15px 15px #227284;
     box-shadow: 0px 0px;
@@ -365,7 +353,6 @@
       align-items: center;
     }
   }
-
   .sectionTwoText {
     display: block;
   }
@@ -401,5 +388,3 @@
 
   /*-----------------------------*/
 }
-
-/*HACKS but for real this is for the footer on the contact page when scrolled out the footer had white space underneath it because the content was not big enough*/

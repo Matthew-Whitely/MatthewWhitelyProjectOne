@@ -1,7 +1,6 @@
 @import "variables";
 @import "setup";
 @import "topography";
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@ html {
   width: 90%;
   margin: 0 auto;
 }
-
 a {
   text-decoration: none;
   color: $black;
@@ -27,7 +25,6 @@ a:focus,
 a:active {
   color: $white !important;
 }
-
 li {
   list-style: none;
 }
@@ -39,12 +36,10 @@ button:hover,
 button:focus {
   background-color: $accent;
 }
-
-/*HEADER*/
+/*----HEADER-----------------------------*/
 header {
   background-color: $primary3;
 }
-
 .mainNav {
   display: flex;
   justify-content: center;
@@ -55,30 +50,25 @@ header {
     }
   }
 }
-
 .subMenu {
   height: 0;
   overflow: hidden;
   position: absolute;
 }
-
 .mainNav li:nth-child(3) {
   font-size: 2rem;
 }
-
 .headerFlex {
   display: flex;
   align-items: center;
   margin-top: 40px;
   justify-content: space-between;
 }
-
 .headerImg {
   box-shadow: 30px 10px white;
   transform: translateY(10%);
   width: 40%;
 }
-
 .headerText h1 {
   font-size: 6rem;
   font-weight: 700;
@@ -87,7 +77,6 @@ header {
   position: relative;
   padding-right: 100px;
 }
-
 .headerTextImg {
   position: absolute;
   top: 18px;
@@ -96,8 +85,7 @@ header {
     width: 90%;
   }
 }
-
-/*section ONE */
+/*-SECTION ONE index.html-----------------------*/
 .sectionOne {
   background-color: $primary4;
 }
@@ -106,7 +94,6 @@ header {
   justify-content: flex-end;
   padding-bottom: 100px;
 }
-
 .nofloat {
   width: 50%;
   h2 {
@@ -116,8 +103,7 @@ header {
     padding: 40px 0;
   }
 }
-
-/*section two*/
+/*-SECTION TWO index.html-----------------------------*/
 .sectionTwoHome {
   background: url(.././harper-designAndAssets/assets/home-image-2.jpg);
   height: 50vh;
@@ -125,8 +111,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/*SECTION THREE*/
+/*SECTION THREE index.html-----------------*/
 .sectionThreeHome {
   background-color: $primary4;
 }
@@ -136,29 +121,25 @@ header {
   grid-template-rows: 1fr 1fr;
   gap: 25px;
 }
-
 .iconContainer {
   display: flex;
   i {
     font-size: 1.2rem;
     padding: 20px;
     background-color: $primary3;
-
     position: relative;
     border-radius: 50%;
     top: -19px;
     right: 12px;
   }
 }
-
 .test2 h3 {
   margin-bottom: 20px;
 }
 .threePad {
   padding: 70px 0;
 }
-
-/* Section 4*/
+/*-SECTION FOUR index.html---------------*/
 .waveImg {
   background-color: $primary2;
   transform: translateY(-5%);
@@ -182,25 +163,20 @@ header {
   max-width: 600px;
   width: 90%;
 }
-
 .waveImgBox {
   img {
     transform: translate(-10px, -20px);
   }
 }
-
 .waveImgBox2 {
   img {
     transform: translate(-2%, -5%);
   }
 }
-/*what annnn annoyance*/
 .btnAlignRight {
   text-align: right;
 }
-
 /*-------IMAGES IN SECTION$*/
-
 .bgColor {
   background-color: $primary1;
 }
@@ -211,8 +187,7 @@ header {
     padding: 20px 0;
   }
 }
-
-/*SECTION 5*/
+/*-SECTION FIVE------------------------*/
 .sectionFive {
   background-color: $primary4;
 }
@@ -230,30 +205,26 @@ header {
   width: 60%;
   margin-left: 40px;
 }
-
-/*SECTION six*/
+/*-SECTION SIX--------------------*/
 .sectionSix {
   margin: 70px 0;
 }
 .sixFlex {
   display: flex;
   justify-content: space-between;
-
   li {
     img {
       padding: 10px;
     }
   }
 }
-
 /*--------------------------------------*/
 /******S T A R T O F B L O G ************?
 /*--------------------------------------*/
 .blogBgColor {
   background-color: $primary4;
 }
-/*section 1 blog post*/
-
+/*-SECTION ONE blog.html-----------------*/
 .blogH1 {
   transform: translateY(-65%);
   margin: 0;
@@ -273,7 +244,6 @@ header {
   padding: 30px;
   margin-top: 20px;
   background-color: $white;
-  // background-color: $white;
 }
 .recentPosts p {
   font-size: 1rem;
@@ -288,7 +258,6 @@ header {
 .recentPosts ul li a:hover {
   color: $accent;
 }
-
 /* right side of column css*/
 .mainBlog {
   padding: 15px;
@@ -299,9 +268,7 @@ header {
 .mainBlog p {
   padding-bottom: 10px;
 }
-
-/* SECTION TWO */
-
+/*-SECTION TWO blog.html------------*/
 .sectionTwoFlex {
   display: flex;
   flex-direction: column;
@@ -309,7 +276,6 @@ header {
   justify-content: space-between;
   padding-top: 40px;
 }
-
 .sectionTwoText {
   display: flex;
   width: 60%;
@@ -325,30 +291,25 @@ header {
     padding-bottom: 10px;
   }
 }
-/* BLOG FORM*/
-
+/*-BLOG FORM blog.html------------*/
 .blogForm {
   display: flex;
   justify-content: flex-end;
 }
-
 .flexForm {
   width: 60%;
   padding-bottom: 25px;
 }
-
 .labelsBlog {
   width: 100%;
   margin-bottom: 10px;
   display: flex;
 }
-
 input[type="text"] {
   width: calc(100% / 2 - 30px);
   margin-right: 30px;
   padding: 20px;
 }
-
 input[type="email"] {
   width: calc(100% / 2);
   padding: 20px;
@@ -363,7 +324,6 @@ textarea {
   width: 100%;
   margin-top: 15px;
 }
-
 /*--------------------------------*/
 /* CONTACT PAGE STARTS*/
 /*--------------------------------*/
@@ -401,14 +361,15 @@ textarea {
 .contactInfo li {
   padding: 5px 10px;
 }
-
 /*right side*/
-
 .contactForm {
   width: 65%;
 }
 .postComment {
   margin-bottom: 20px;
 }
-
+.contactBody {
+  min-height: 100vh;
+  background-color: $primary4;
+}
 @import "media";

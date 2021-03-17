@@ -374,7 +374,7 @@ button:focus {
   background-color: #f38d8d;
 }
 
-/*HEADER*/
+/*----HEADER-----------------------------*/
 header {
   background-color: #b9dde7;
 }
@@ -446,7 +446,7 @@ header {
   width: 90%;
 }
 
-/*section ONE */
+/*-SECTION ONE index.html-----------------------*/
 .sectionOne {
   background-color: #f6f6f6;
 }
@@ -473,7 +473,7 @@ header {
   padding: 40px 0;
 }
 
-/*section two*/
+/*-SECTION TWO index.html-----------------------------*/
 .sectionTwoHome {
   background: url(.././harper-designAndAssets/assets/home-image-2.jpg);
   height: 50vh;
@@ -482,7 +482,7 @@ header {
   background-position: center;
 }
 
-/*SECTION THREE*/
+/*SECTION THREE index.html-----------------*/
 .sectionThreeHome {
   background-color: #f6f6f6;
 }
@@ -521,7 +521,7 @@ header {
   padding: 70px 0;
 }
 
-/* Section 4*/
+/*-SECTION FOUR index.html---------------*/
 .waveImg {
   background-color: #68b0c1;
   -webkit-transform: translateY(-5%);
@@ -565,7 +565,6 @@ header {
           transform: translate(-2%, -5%);
 }
 
-/*what annnn annoyance*/
 .btnAlignRight {
   text-align: right;
 }
@@ -584,7 +583,7 @@ header {
   padding: 20px 0;
 }
 
-/*SECTION 5*/
+/*-SECTION FIVE------------------------*/
 .sectionFive {
   background-color: #f6f6f6;
 }
@@ -609,7 +608,7 @@ header {
   margin-left: 40px;
 }
 
-/*SECTION six*/
+/*-SECTION SIX--------------------*/
 .sectionSix {
   margin: 70px 0;
 }
@@ -634,7 +633,7 @@ header {
   background-color: #f6f6f6;
 }
 
-/*section 1 blog post*/
+/*-SECTION ONE blog.html-----------------*/
 .blogH1 {
   -webkit-transform: translateY(-65%);
           transform: translateY(-65%);
@@ -693,7 +692,7 @@ header {
   padding-bottom: 10px;
 }
 
-/* SECTION TWO */
+/*-SECTION TWO blog.html------------*/
 .sectionTwoFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,7 +731,7 @@ header {
   padding-bottom: 10px;
 }
 
-/* BLOG FORM*/
+/*-BLOG FORM blog.html------------*/
 .blogForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,6 +835,11 @@ textarea {
 
 .postComment {
   margin-bottom: 20px;
+}
+
+.contactBody {
+  min-height: 100vh;
+  background-color: #f6f6f6;
 }
 
 @media (max-width: 1020px) {
@@ -1285,5 +1289,3 @@ textarea {
   /*-----------------------------*/
   /*-----------------------------*/
 }
-
-/*HACKS but for real this is for the footer on the contact page when scrolled out the footer had white space underneath it because the content was not big enough*/
