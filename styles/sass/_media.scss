@@ -117,11 +117,23 @@
     overflow: hidden;
     position: absolute;
   }
-  .mainNav li:hover .subMenu,
-  .mainNav li:focus-within .subMenu {
+  .hamburgerMenu {
+    display: block;
+    position: static;
+    height: auto;
+    font-size: 1.5rem;
+  }
+  // .mainNav li:hover .subMenu,
+  // .mainNav li:focus-within .subMenu {
+  //   height: auto;
+  //   padding: 10px;
+  //   overflow: auto;
+  // }
+  .subMenu1 {
     height: auto;
     padding: 10px;
     overflow: auto;
+    background: white;
   }
   .subMenu {
     font-size: 1rem;

@@ -401,6 +401,12 @@ header {
   position: absolute;
 }
 
+.hamburgerMenu {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
 .mainNav li:nth-child(3) {
   font-size: 2rem;
 }
@@ -449,6 +455,7 @@ header {
 /*-SECTION ONE index.html-----------------------*/
 .sectionOne {
   background-color: #f6f6f6;
+  position: relative;
 }
 
 .sectionOneFloat {
@@ -459,6 +466,7 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .nofloat {
@@ -842,6 +850,37 @@ textarea {
   background-color: #f6f6f6;
 }
 
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 44%;
+  background-color: #f6f6f6;
+  padding: 3rem;
+  border-radius: 5px;
+  z-index: 10;
+  overflow: hidden;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
 @media (max-width: 1020px) {
   /*THIS IS FOR THE HEADER ON THE HOME PAGE */
   /* MINOR FIXES */
@@ -977,11 +1016,17 @@ textarea {
     overflow: hidden;
     position: absolute;
   }
-  .mainNav li:hover .subMenu,
-  .mainNav li:focus-within .subMenu {
+  .hamburgerMenu {
+    display: block;
+    position: static;
+    height: auto;
+    font-size: 1.5rem;
+  }
+  .subMenu1 {
     height: auto;
     padding: 10px;
     overflow: auto;
+    background: white;
   }
   .subMenu {
     font-size: 1rem;

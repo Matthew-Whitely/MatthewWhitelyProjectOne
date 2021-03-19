@@ -21,7 +21,9 @@
         <ul class="mainNav">
           <li class="mobile"><a href="">HOME</a></li>
           <li class="mobile"><a href="">ABOUT</a></li>
-          <li><a href="">HARPER</a>
+          <li class="mobile"><a href="">HARPER</a> </li>
+
+          <li class="hamburgerMenu"><a href="#"><i class="fas fa-bars"></i></a>
             <ul class="subMenu">
               <li><a href="#">HOME</a></li>
               <li><a href="#">ABOUT</a></li>
@@ -49,21 +51,31 @@
   </header>
   <main>
     <section class="sectionOne">
-      <div class="wrapper">
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+
+        <p>
+          IF THIS WORKS THEN YOU CAN DO YOUR PROJECTS
+        </p>
+      </div>
+      <div class="overlay hidden">
+      </div>
+      < <div class="wrapper">
         <div class="sectionOneFloat">
           <div class="nofloat">
             <h2>WHO'S HARPER?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id pariatur reprehenderit inventore tenetur
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id pariatur reprehenderit inventore
+              tenetur
               eius, mollitia, iste recusandae nulla magnam earum provident excepturi illo ullam, facere natus ex?
               Impedit,
               optio!.</p>
             <div>
-              <button class="buttonTxt btnWidth" type="submit">FIND OUT MORE</button>
+              <button class="buttonTxt btnWidth" id="harper" type="submit">FIND OUT MORE</button>
             </div>
+
           </div>
         </div>
-      </div>
-      </div>
+        </div>
     </section>
     <section class="sectionTwoHome" aria-label="Big building close up">
     </section>
@@ -172,10 +184,14 @@
         </ul>
       </div>
     </section>
+
+    </div>
+    div>
   </main>
   <footer>
     <p class="copyRight">Copyright &#169; 2021 Juno College </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
