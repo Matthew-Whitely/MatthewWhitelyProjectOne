@@ -176,6 +176,7 @@ header {
     transform: translate(-10px, -20px);
   }
 }
+
 .waveImgBox2 {
   img {
     transform: translate(-2%, -5%);
@@ -411,6 +412,10 @@ textarea {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+.surfingImageHide {
+  display: none;
 }
 
 @import "media";
