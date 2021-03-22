@@ -133,7 +133,8 @@
     height: auto;
     padding: 10px;
     overflow: auto;
-    background: #b9dde7;
+    background: #f38d8d;
+    z-index: 30;
   }
   .subMenu {
     font-size: 1rem;
@@ -237,9 +238,7 @@
   /*------START OF BLOG -----------*/
   /*-----------------------------*/
   /*-----------------------------*/
-  nav {
-    padding-bottom: 50px;
-  }
+
   .blogNav {
     padding-bottom: 10px;
   }
@@ -305,9 +304,7 @@
     right: 5px;
     width: 40%;
   }
-  nav {
-    padding-bottom: 60px;
-  }
+
   .sectionTwoHome {
     display: none;
   }

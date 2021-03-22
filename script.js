@@ -9,12 +9,17 @@ const SectionFourHarperBtn = document.querySelector(
   "#sectionFourHarpersTravels"
 );
 const surfImg = document.querySelector(".surfingImg");
-const imgContain = document.querySelector(".waveImg");
+// const imgContain = document.querySelector(".waveImg");
 const moreInfo = document.querySelector(".moreInfo");
-console.log(surfImg);
-console.log(SectionFourHarperBtn);
-console.log(imgContain);
-console.log(moreInfo);
+const harperFavs = document.querySelector("#sectionFourHarpersfavourites");
+const factoryImage = document.querySelector(".factory");
+const moreInfo1 = document.querySelector(".moreInfo1");
+
+// console.log(harperFavs);
+// console.log(surfImg);
+// console.log(SectionFourHarperBtn);
+// console.log(imgContain);
+// console.log(moreInfo);
 // console.log(ranImage);
 // console.log(harperButton);
 // console.log(hamburgerMenu);
@@ -51,7 +56,22 @@ const randomizeImage = function () {
 };
 
 harperButton.addEventListener("click", randomizeImage);
-// randomizeImage();
+
+//   e.preventDeault();
+// });
+
+// harperButton.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   const randomizeImage = function () {
+//     let rImg = Math.floor(Math.random() * 8) + 1;
+
+//     ranImage.src = `harper-designAndAssets/assets/home-image-${rImg}.jpg`;
+//     if (rImg == 2) {
+//       ranImage.src = `harper-designAndAssets/assets/home-image-1.jpg`;
+//     }
+//   };
+
+// });
 
 //WHAT I WANT THIS TO DO IS WHEN THE BUTTON IS PRESSED TEXT IS DYNAMICALLY ADDED TO THE SCREEN WHERE THE IMAGE WAS
 //THIS FUNCTION WILL TOGGLE THE HIDDEN VALUE
@@ -64,4 +84,16 @@ harperButton.addEventListener("click", randomizeImage);
 SectionFourHarperBtn.addEventListener("click", function () {
   surfImg.classList.toggle("surfingImageHide");
   moreInfo.classList.toggle("hidden");
+  moreInfo.classList.toggle("moreInfo1");
 });
+
+harperFavs.addEventListener("click", function () {
+  factoryImage.classList.toggle("surfingImageHide");
+  moreInfo1.classList.toggle("hidden");
+  moreInfo1.classList.toggle("moreInfo");
+});
+
+//Image Gallery
+
+// let galleryImages = document.querySelectorAll("imageGallery");
+arrowLeft.addEventListener("click", postsHide);

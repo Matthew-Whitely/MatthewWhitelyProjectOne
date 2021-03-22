@@ -21,7 +21,9 @@
         <ul class="mainNav">
           <li class="mobile"><a href="">HOME</a></li>
           <li class="mobile"><a href="">ABOUT</a></li>
-          <li id="harperButton" class="mobile"><button href="">HARPER</button> </li>
+          <li class="mobile">
+            <button id="harperButton" class="navButtonFix" href="">HARPER</button>
+          </li>
 
           <li class="hamburgerMenu"><a href="#"><i class="fas fa-bars"></i></a>
             <ul class="subMenu">
@@ -132,10 +134,11 @@
     <section class="sectionFourHome">
       <div class="gridTime1">
         <div class="waveImg ">
-          <div class="hidden moreInfo">
-            This is more info about Harpers travels
-          </div>
+
           <div class="waveImgBox babyWrapper">
+            <div class="moreInfo hidden">
+              This is where you would put more information about Harpers Travels.
+            </div>
             <img class="surfingImg" src="harper-designAndAssets/assets/home-image-3.jpg"
               alt="two people surfing at dusk">
           </div>
@@ -151,12 +154,15 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur omnis voluptate consectetur minima rem
             aut tenetur recusandae molestiae culpa vel!</p>
           <div class="btnAlignRight">
-            <button class="buttonTxt btnWidth" type="submit">READ MORE</button>
+            <button id="sectionFourHarpersfavourites" class="buttonTxt btnWidth" type="submit">READ MORE</button>
           </div>
         </div>
         <div class="waveImgOne ">
           <div class="waveImgBox2 babyWrapper1">
-            <img class="" src="harper-designAndAssets/assets/home-image-4.jpg"
+            <div class="moreInfo1 hidden">
+              This is where you would put more information about Harpers Travels.
+            </div>
+            <img class="factory" src="harper-designAndAssets/assets/home-image-4.jpg"
               alt="Factory with pipes coming out of the side">
           </div>
         </div>
@@ -179,18 +185,30 @@
       </div>
     </section>
     <section class="sectionSix">
-      <div class="wrapper">
+      <!-- <div class="wrapper">
         <ul class="sixFlex">
-          <li><img src="harper-designAndAssets/assets/home-image-6.jpg" alt="Pink House up Close"></li>
-          <li><img src="harper-designAndAssets/assets/home-image-7.jpg"
+          <li class="imageGallery"><img src="harper-designAndAssets/assets/home-image-6.jpg" alt="Pink House up Close">
+          </li>
+          <li class="imageGallery"><img src="harper-designAndAssets/assets/home-image-7.jpg"
               alt="Airplane flying with sunglight peaking throught the clouds"></li>
-          <li><img src="harper-designAndAssets/assets/home-image-8.jpg" alt="Pink and light blue background"></li>
+          <li class="imageGallery"><img src="harper-designAndAssets/assets/home-image-8.jpg"
+              alt="Pink and light blue background"></li>
         </ul>
+      </div> -->
+
+      <div class="carouselContainer">
+        <div class="carouselSlide">
+          <img src="./harper-designAndAssets/assets/home-image-6.jpg" alt="">
+          <img src="./harper-designAndAssets/assets/home-image-7.jpg" alt="">
+          <img src="./harper-designAndAssets/assets/home-image-8.jpg" alt="">
+        </div>
       </div>
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
     </section>
 
     </div>
-    div>
+
   </main>
   <footer>
     <p class="copyRight">Copyright &#169; 2021 Juno College </p>

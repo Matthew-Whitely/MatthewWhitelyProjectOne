@@ -306,6 +306,7 @@ h4 {
   margin-top: 40px;
   color: #ffffff;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .btnWidth {
@@ -411,6 +412,12 @@ header {
   font-size: 2rem;
 }
 
+.navButtonFix {
+  background-color: #b9dde7;
+  border: none;
+  cursor: pointer;
+}
+
 .headerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,6 +437,7 @@ header {
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
   width: 40%;
+  z-index: 20;
 }
 
 .headerText h1 {
@@ -666,9 +674,8 @@ header {
   background-color: #ffffff;
 }
 
-.recentPosts {
+.posts {
   padding: 30px;
-  margin-top: 20px;
   background-color: #ffffff;
 }
 
@@ -881,6 +888,45 @@ textarea {
   z-index: 5;
 }
 
+.surfingImageHide {
+  opacity: 0.2;
+}
+
+.moreInfo1 {
+  padding: 40px 20px;
+  font-family: "Cabin", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px;
+  position: absolute;
+  z-index: 50;
+}
+
+.iconPosts {
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
+.iconPosts i {
+  background: white;
+  text-align: right;
+  font-size: 4rem;
+  position: relative;
+}
+
+.carouselContainer {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carouselSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
 @media (max-width: 1020px) {
   /*THIS IS FOR THE HEADER ON THE HOME PAGE */
   /* MINOR FIXES */
@@ -1026,7 +1072,8 @@ textarea {
     height: auto;
     padding: 10px;
     overflow: auto;
-    background: white;
+    background: #f38d8d;
+    z-index: 30;
   }
   .subMenu {
     font-size: 1rem;
@@ -1150,9 +1197,6 @@ textarea {
   /*------START OF BLOG -----------*/
   /*-----------------------------*/
   /*-----------------------------*/
-  nav {
-    padding-bottom: 50px;
-  }
   .blogNav {
     padding-bottom: 10px;
   }
@@ -1231,9 +1275,6 @@ textarea {
     top: -15px;
     right: 5px;
     width: 40%;
-  }
-  nav {
-    padding-bottom: 60px;
   }
   .sectionTwoHome {
     display: none;

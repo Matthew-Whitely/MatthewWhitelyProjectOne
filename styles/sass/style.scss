@@ -63,6 +63,12 @@ header {
 .mainNav li:nth-child(3) {
   font-size: 2rem;
 }
+.navButtonFix {
+  background-color: $primary3;
+  border: none;
+  cursor: pointer;
+}
+
 .headerFlex {
   display: flex;
   align-items: center;
@@ -249,9 +255,10 @@ header {
   padding: 50px;
   background-color: $white;
 }
-.recentPosts {
+
+.posts {
   padding: 30px;
-  margin-top: 20px;
+
   background-color: $white;
 }
 .recentPosts p {
@@ -415,7 +422,40 @@ textarea {
 }
 
 .surfingImageHide {
-  display: none;
+  opacity: 0.2;
+}
+.moreInfo1 {
+  padding: 40px 20px;
+  font-family: "Cabin", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px;
+  position: absolute;
+  z-index: 50;
+}
+
+.iconPosts {
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+  i {
+    background: white;
+    text-align: right;
+
+    font-size: 4rem;
+
+    position: relative;
+  }
+}
+
+.carouselContainer {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carouselSlide {
+  display: flex;
+  width: 100%;
 }
 
 @import "media";
