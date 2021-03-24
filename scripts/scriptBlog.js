@@ -12,7 +12,7 @@ myBlogApp.init = () => {
   myBlogApp.hideContent();
   myBlogApp.daBurgerOnBlog();
 };
-
+//revaling the content when clicking down arrow
 myBlogApp.revealContent = () => {
   arrowDown.addEventListener("click", function () {
     posts.classList.remove("hidden");
@@ -20,6 +20,7 @@ myBlogApp.revealContent = () => {
     arrowUp.classList.remove("hidden");
   });
 };
+//hidding the content when you click the up arrow
 myBlogApp.hideContent = () => {
   arrowUp.addEventListener("click", function () {
     posts.classList.add("hidden");
@@ -27,6 +28,7 @@ myBlogApp.hideContent = () => {
     arrowUp.classList.add("hidden");
   });
 };
+//burger menu
 myBlogApp.daBurgerOnBlog = () => {
   hamburgerMenu.addEventListener("click", function () {
     subMenu.classList.toggle("subMenu1");
